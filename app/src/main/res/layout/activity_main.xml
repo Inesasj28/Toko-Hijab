@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/b">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/b"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/logo"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TOKO HIJAB"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textSize="20dp"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:id="@+id/txt1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/txt1"
+        android:padding="25dp"
+        android:id="@+id/ly1">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Username"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:id="@+id/username"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:backgroundTint="@color/white"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10dp"
+            android:textSize="20dp"
+            android:id="@+id/password"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_below="@id/ly1"
+        android:width="200dp"
+        android:id="@+id/login"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/login"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not have an account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Register"
+            android:textColor="@color/black"
+            android:id="@+id/register"/>
+    </LinearLayout>
+
+</RelativeLayout>

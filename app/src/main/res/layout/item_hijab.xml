@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardCornerRadius="10dp"
+    app:strokeColor="@color/black"
+    app:strokeWidth="2dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/namabarang"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Barang"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/img_delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/kapasitas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Jumlah"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="@+id/img_delete"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namabarang" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/black"
+            app:layout_constraintBottom_toTopOf="@+id/img_delete"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_delete"
+            app:layout_constraintVertical_bias="0.573" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

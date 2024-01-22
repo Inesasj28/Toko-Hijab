@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@drawable/profil">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/back"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/back"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Welcome to Toko Hijab"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:id="@+id/rtxt1"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rtxt1"
+        android:text="Let’s help you meet up your tasks."
+        android:fontFamily="sans-serif-condensed-medium"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:id="@+id/rtxt2"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp"
+        android:layout_below="@id/rtxt2"
+        android:id="@+id/rly">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:paddingLeft="10dp"
+            android:hint="Create Username"
+            android:fontFamily="sans-serif-condensed-light"
+            android:backgroundTint="@color/white"
+            android:id="@+id/ret1"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Create Password"
+            android:fontFamily="sans-serif-condensed-light"
+            android:backgroundTint="@color/white"
+            android:id="@+id/ret2"
+            />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="Confirm Password"
+            android:fontFamily="sans-serif-condensed-light"
+            android:backgroundTint="@color/white"
+            android:id="@+id/ret3"
+            />
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:textColor="@color/black"
+        android:layout_below="@id/rly"
+        android:width="200dp"
+        android:textSize="20dp"
+        android:id="@+id/rbtn1"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rbtn1"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Login"
+            android:textColor="@color/black"
+            android:id="@+id/txtlog"/>
+    </LinearLayout>
+
+</RelativeLayout>

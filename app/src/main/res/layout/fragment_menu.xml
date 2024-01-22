@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuFragment"
+    android:background="@drawable/hijab">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/hijab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Menu Hijab"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOGOUT"
+            android:id="@+id/logout"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</RelativeLayout>
